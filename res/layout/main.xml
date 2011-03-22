@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	 <com.HorizontalPager.dynamicPaging.HorizontalPager
+        android:id="@+id/horizontal_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+        
+        <!-- Previous Page -->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent">
+	        <ImageView
+	        	android:id="@+id/image_prev"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/noimage"></ImageView>
+		</LinearLayout>
+		
+		<!-- Centre Page -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent">
+	        <ImageView
+	        	android:id="@+id/image_centre"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/noimage"></ImageView>
+		</LinearLayout>
+		
+		<!-- Next Page -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent">
+	        <ImageView
+	        	android:id="@+id/image_next"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/noimage"></ImageView>
+		</LinearLayout>
+        
+     </com.HorizontalPager.dynamicPaging.HorizontalPager>
+
+</LinearLayout>
