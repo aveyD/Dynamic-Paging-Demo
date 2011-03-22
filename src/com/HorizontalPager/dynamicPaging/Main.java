@@ -3,6 +3,7 @@ package com.HorizontalPager.dynamicPaging;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
@@ -135,4 +136,11 @@ public class Main extends Activity
         	}
         }
 	};
+	
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) 
+    {
+    	super.onConfigurationChanged(newConfig);
+    	dynamicViewSwitcher.orientationSnapToScreen(this);
+    }
 }
